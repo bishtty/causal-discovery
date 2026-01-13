@@ -89,7 +89,7 @@ print(f"Downloading/loading dataset: {CONFIG['dataset_name']}")
 dataset = cc_datasets.Dataset(
     name=CONFIG["dataset_name"],
     root=str(data_root),
-    download=True
+    download=False
 )
 
 print(f"Available experiments (first 10): {dataset.available_experiments()[:10]}")
